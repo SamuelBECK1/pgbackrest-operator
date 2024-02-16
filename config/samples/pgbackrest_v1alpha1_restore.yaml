@@ -1,0 +1,12 @@
+apiVersion: pgbackrest.pgbackrest/v1alpha1
+kind: Restore
+metadata:
+  labels:
+    app.kubernetes.io/name: restore
+    app.kubernetes.io/instance: restore-sample
+    app.kubernetes.io/part-of: operator
+    app.kubernetes.io/managed-by: kustomize
+    app.kubernetes.io/created-by: operator
+  name: restore-sample
+spec:
+  # TODO(user): Add fields here
